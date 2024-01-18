@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header {
+    width: 100%;
+    min-height: 70px;
+    background-color: #404044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    position: fixed;
+    #nav {
+      width: 100%;
+      display: flex;
+      min-height: 70px;
+      .logo {
+        width: 10%;
+        min-height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .borderLogo {
+          border: 2px solid white;
+          width: 70px;
+          text-align: center;
+          h5 {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 20px;
+            font-family: Muli, Arial, sans-serif;
+          }
+        }
+      }
+      .list {
+        width: 90%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+  
+        ul {
+          width: 60%;
+          align-items: center;
+          justify-content: space-between;
+          display: flex;
+          gap: 20px;
+          list-style-type: none;
+          li {
+            .home {
+              color: #cbcccd;
+              &:hover {
+                color: #d7d4d7;
+              }
+            }
+            a {
+              text-decoration: none;
+              color: #d7d4d7;
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 29px;
+              font-family: Muli, Arial, sans-serif;
+            }
+          }
+        }
+      }
+      .dropdown {
+        width: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        .dropdown-menu {
+          padding-left: 20px;
+          background-color: #404044;
+          li {
+            a {
+              color: #d7d4d7;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    header {
+      .container {
+        #nav {
+          .list {
+            ul {
+              li {
+                display: none;
+              }
+            }
+          }
+  
+          .dropdown {
+            display: block;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  #addPageInp{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .makeReserve {
+        min-height: 743px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .makeReserveInp {
+            width: 70%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+            // padding: 65px;
+            border: 2px solid #F42F2C;
+            border-radius: 15px;
+
+        form{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+
+            input {
+                width: 50%;
+                min-height: 39px;
+                border: 1px solid #d0d0d0;
+
+                &::placeholder {
+                    color: #9b999c;
+                    padding-left: 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+            button {
+                min-height: 42px;
+                width: 23%;
+                border: none;
+                background-color: #F42F2C;
+                font-family: Poppins, sans-serif;
+                ;
+                color: #fff;
+                font-size: 13px;
+                font-weight: 600;
+                transition: 0.4s ease;
+                margin-top: 15px;
+
+            }
+        }
+    }
+ 
+#addPageProoducts{
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .miniDiv {
+        
+            display: flex;
+        border: 1px solid #222;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+      
+            h2 {
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
+                color: #222;
+                font-weight: 600;
+                line-height: 43px;
+            }
+
+       
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button {
+                    border: none;
+                    color: #F42F2C;
+                    background-color: transparent;
+                    font-weight: 600;
+                    font-size: 20px;
+
+                 
+                }
+            
+        }
+    }
+    .btn-group{
+        margin-bottom: 10px;
+    }
+    
+}

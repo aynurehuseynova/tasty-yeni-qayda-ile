@@ -1,0 +1,562 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  min-height: 70px;
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  position: fixed;
+  #nav {
+    width: 100%;
+    display: flex;
+    min-height: 70px;
+    .logo {
+      width: 10%;
+      min-height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .borderLogo {
+        border: 2px solid white;
+        width: 70px;
+        text-align: center;
+        h5 {
+          text-align: center;
+          color: white;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 20px;
+          font-family: Muli, Arial, sans-serif;
+        }
+      }
+    }
+    .list {
+      width: 90%;
+      display: flex;
+      align-items: end;
+      justify-content: end;
+
+      ul {
+        width: 60%;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        li {
+          .home {
+            color: #cbcccd;
+            &:hover {
+              color: #d7d4d7;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: #d7d4d7;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 29px;
+            font-family: Muli, Arial, sans-serif;
+          }
+        }
+      }
+    }
+    .dropdown {
+      width: 7%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      .dropdown-menu {
+        padding-left: 20px;
+        background-color: #404044;
+        li {
+          a {
+            color: #d7d4d7;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    .container {
+      #nav {
+        .list {
+          ul {
+            li {
+              display: none;
+            }
+          }
+        }
+
+        .dropdown {
+          display: block;
+          display: flex;
+          align-items: center;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+// 1
+#tasty {
+  width: 100%;
+  min-height: 600px;
+  background-image: url(/assets/images/bg_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  .delicious {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      font-size: 72px;
+      font-weight: 400;
+      font-family: "Indie Flower", cursive;
+      line-height: 86px;
+      color: #ffffff;
+      min-height: 130px;
+    }
+    button {
+      background-color: transparent;
+      border-color: white;
+      color: white;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      transition: 0.7s;
+      padding: 15px 25px 15px 25px;
+      &:hover {
+        color: black;
+        transition: 0.7s;
+        background-color: #d3d3d4;
+      }
+    }
+  }
+}
+@media only screen  and (max-width:992px){
+  #tasty{
+    .delicious{
+      h1{
+        font-size: 62px;
+      }
+    }
+  }
+}
+@media screen  and (max-width:768px){
+  #tasty{
+    .delicious{
+      h1{
+        font-size: 46px;
+      }
+    }
+  }
+}
+@media screen  and (max-width:522px){
+  #tasty{
+    .delicious{
+      h1{
+        font-size: 30px;
+      }
+    }
+  }
+}
+// 2
+#ourChef {
+  width: 100%;
+  min-height: 600px;
+  .chefImages {
+    img {
+      width: 100%;
+    }
+  }
+  .chefAbaut {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    span {
+      padding-top: 20px;
+      color: #8b8b92;
+      font-size: 15px;
+      line-height: 29px;
+      font-weight: 300;
+      font-family: Muli, Arial, sans-serif;
+    }
+    h3 {
+      width: 60%;
+      font-size: 29px;
+      min-height: 100px;
+    }
+    p {
+      color: #8b8b92;
+      font-size: 16px;
+      line-height: 29px;
+      font-weight: 300;
+      font-family: Muli, Arial, sans-serif;
+    }
+  }
+}
+@media only screen  and (max-width:992px){
+  #ourChef{
+    .chefAbaut{
+      h3{
+        font-size: 25px;
+      }
+      font-size: 13px;
+    }
+  }
+}
+@media screen  and (max-width:768px){
+  #ourChef{
+    .chefAbaut{
+      h3{
+        font-size: 20px;
+      }
+      p{
+        font-size: 10px;
+      }
+    }
+  }
+}
+@media screen  and (max-width:522px){
+  #ourChef{
+    .chefAbaut{
+      h3{
+        font-size: 17px;
+      }
+      p{
+        font-size: 8px;
+      }
+    }
+  }
+}
+// 3
+#ourMenu {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .ourExclusiveMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    span {
+      color: #8b8b92;
+      font-size: 15px;
+      line-height: 29px;
+      font-weight: 300;
+      font-family: Muli, Arial, sans-serif;
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 500;
+      font-family: Muli, Arial, sans-serif;
+      line-height: 51px;
+      color: #404044;
+      min-height: 130px;
+    }
+
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .main {
+      width: 100px;
+      height: 50px;
+      background-color: #ffb400;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      p {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        color: black;
+        font-weight: 700;
+      }
+    }
+    .drinks {
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      border: 1px solid #a5a5ab;
+      p {
+        color: #a5a5ab;
+        font-weight: 700;
+      }
+    }
+  }
+  #productsAll {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    .miniDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32%;
+        flex-direction: column;
+        img {
+            width: 50%;
+            border-radius: 15px;
+        }
+
+        h2 {
+            font-family: Poppins, sans-serif;
+            font-size: 20px;
+            color: #222;
+            font-weight: 600;
+            line-height: 43px;
+        }
+
+        .wishAdd {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                border: none;
+                color:#ffb400;
+                background-color: transparent;
+                font-weight: 600;
+
+                i {
+                    font-size: 20px;
+                    color: #F42F2C;
+                }
+            }
+        }
+    }
+}
+
+.loadMore {
+    width: 100%;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        min-height: 45px;
+        width: 16%;
+        border: 2px solid #ffb400;
+        font-family: Poppins, sans-serif;
+        background-color: transparent;
+        color: #ffb400;
+        font-size: 13px;
+        font-weight: 600;
+        transition: 0.4s ease;
+
+    }
+}
+}
+
+@media screen and (max-width:768px) {
+  #ourMenu{
+   #productsAll{
+    width: 100%;
+    flex-wrap: wrap;
+    .miniDiv{
+      width: 100%;
+      img{
+        width: 30%;
+      }
+      .wishAdd{
+        width: 30%;
+        button{
+          font-size: 10px;
+        }
+      }
+    }
+   } 
+  }
+}
+// 4
+#guests {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .gestSays {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    span {
+      color: #8b8b92;
+      font-size: 15px;
+      line-height: 29px;
+      font-weight: 300;
+      font-family: Muli, Arial, sans-serif;
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 500;
+      font-family: Muli, Arial, sans-serif;
+      line-height: 51px;
+      color: #404044;
+      min-height: 130px;
+    }
+  }
+  .guestsSays {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .imgGuest {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      img {
+        width: 40%;
+        min-height: 100px;
+        border-radius: 50%;
+      }
+    }
+    .like {
+      padding-top: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: #ffb400;
+        min-height: 40px;
+        font-size: 13px;
+      }
+    }
+    .sayText {
+      width: 100%;
+      p {
+        width: 85%;
+        text-align: center;
+        color: #8b8b92;
+        font-size: 16px;
+        line-height: 29px;
+        font-weight: 300;
+      }
+      h5{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 23px;
+
+      }
+      h6{
+         text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 23px;
+        color: #C0C0C3;
+      }
+    }
+  }
+}
+// 5
+#ourMenu {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .ourExclusiveMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    span {
+      color: #8b8b92;
+      font-size: 15px;
+      line-height: 29px;
+      font-weight: 300;
+      font-family: Muli, Arial, sans-serif;
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 500;
+      font-family: Muli, Arial, sans-serif;
+      line-height: 51px;
+      color: #404044;
+      min-height: 130px;
+    }
+  }
+  .blog {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .images {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+    .text{
+      width: 100%;
+      span{
+        color: #8b8b92;
+      }
+      p {
+        width: 85%;
+        text-align: center;
+        color: black;
+        font-size: 16px;
+        line-height: 29px;
+        font-weight: 300;
+      }
+      .readMore{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i{
+          color: #8b8b92;
+        }
+      }
+    }
+  }
+}
